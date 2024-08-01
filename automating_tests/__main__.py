@@ -1,3 +1,7 @@
+"""
+Main function
+"""
+
 from .backend.example import MyClass
 
 if __name__ == "__main__":

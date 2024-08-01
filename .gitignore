@@ -1,0 +1,5 @@
+.tox
+__pycache__
+tests/__pycache__
+automating_tests/__pycache__
+.coverage
