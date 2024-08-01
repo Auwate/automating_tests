@@ -9,6 +9,20 @@ This project is the culmination of research and implementation into automated te
 - `pyproject.toml`
 	- The centralized dependency hub that contains metainformation about your project.
 
+# Important
+
+Before diving deep into the explanations on `Tox`, `Poetry`, and `pyproject.toml`, let's review the important commands that pertain to this project.
+
+- `poetry install --no-root`
+	- This installs only the base dependencies, excluding the dev dependencies
+- `poetry install --with dev --no-root`
+	- This installs all the dependencies
+- `poetry run tox`
+	- This runs all the tests found in `Tox`
+- `poetry run tox -e tests,coverage`
+	- This runs specific tests
+	- This example runs the `tests` and `coverage` environments.
+
 # Tox
 
 `Tox` is a command-line test automating framework that allows you to configure several isolated virtual environments for testing. This verifies your code works across various configurations, while maintaining a simplified process of continuous integration. For example, you can test different `Python` versions, such as `py36`, `py37`, and then also test for `coverage`, `linting`, `unit tests`, etc.

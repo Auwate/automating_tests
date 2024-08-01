@@ -3,7 +3,7 @@ Testing suite
 """
 
 import unittest
-from ..automating_tests.backend.example import MyClass
+from automating_tests.backend.example import MyClass
 
 
 class TestSuite(unittest.TestCase):
